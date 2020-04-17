@@ -1,0 +1,12 @@
+﻿{
+  "profiles": {
+    "GrpcServer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://192.168.1.3:5001/",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

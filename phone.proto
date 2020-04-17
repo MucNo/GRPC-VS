@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+
+service Phone{
+	rpc	GetPhoneNumber(PhoneRequest) returns (PhoneReply);
+	rpc GetNewPhoneNumber(NewPhoneRequest) returns (stream PhoneReply);
+}
+
+message NewPhoneRequest{
+}
+
+message PhoneRequest{
+	int32 ID = 1;
+}
+
+message PhoneReply{
+	string number = 1;
+	bool is_Active = 2;
+}
